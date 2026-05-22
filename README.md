@@ -1,6 +1,14 @@
 # Commands
 
+## Install dependencies
+```uv sync```
 
+## Create VENV
+```uv venv```
+
+## Activate VENV:
+Windows: ```.venv\Scripts\activate```
+Linux: ```source .venv/bin/activate```
 
 ## Docker setup
 
@@ -17,12 +25,6 @@ docker run --name lavapro-db -p 5432:5432 -e POSTGRES_USER=lavapro -e POSTGRES_P
 SQLALCHEMY_DATABASE_URL = "postgresql://lavapro:lavapropass!123@localhost:5432/lavapro_api"
 ```
 
-## Create VENV
-```uv venv```
-
-## Activate VENV:
-Windows: ```.venv\Scripts\activate```
-Linux: ```source .venv/bin/activate```
 
 ## Run fastapi server:
 ```uv run fastapi dev app/main.py```
