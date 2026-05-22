@@ -3,7 +3,7 @@ services:
     image: postgres:latest
     container_name: lavapro-db
     ports:
-      - "5434:5432"
+      - "5432:5432"
     environment:
       POSTGRES_USER: lavapro
       POSTGRES_PASSWORD: lavapropass!123
